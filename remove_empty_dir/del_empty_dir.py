@@ -1,4 +1,4 @@
-#    Usage: python3 del_empty_dir.py "E:/Test"
+#    Usage: del_empty_dir.py \"E:/folder path here\
 
 import os
 import sys
@@ -23,7 +23,7 @@ def move_up_dir():
 def del_empty_dir():
     if len(sys.argv) == 1:
         # Print usage
-        print("Usage: del_empty_dir.py \"E:/TestFolder\"")
+        print("Usage: del_empty_dir.py \"E:/folder path here\"")
     else:
         for root, dirs, files in os.walk(path, topdown=False):
             for name in dirs:
