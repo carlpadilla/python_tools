@@ -42,4 +42,3 @@ def del_empty_dir():
 move_up_dir()
 time.sleep(5)
 del_empty_dir()
-
